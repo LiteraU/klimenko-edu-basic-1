@@ -79,3 +79,29 @@ a:hover, button:hover {
     cursor: pointer;
     padding: 0 10px;
 }
+
+.headerMenu {
+    min-height: 50px;
+    background-color: var(--color-light-pink);
+    padding: 16px;
+}
+
+.headerMenuList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headerMenuLink {
+    font-size: 14px;
+    color: #333;
+    padding-left: 30px;
+}
+
+.headerMenuItem:first-child .headerMenuLink{
+    padding-left: 0;
+}
+
+.headerMenuLink:hover {
+    opacity: 0.8;
+}
