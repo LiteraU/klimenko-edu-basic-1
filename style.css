@@ -1,0 +1,28 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --color-light-pink: #EFEFEF;
+    --color-pink: #F13C6E;
+    --color-black: #000;
+    --color-white: #FFF;
+    --COLOR-gray: #828282;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
