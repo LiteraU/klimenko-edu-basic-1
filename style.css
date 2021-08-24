@@ -57,6 +57,71 @@ a:hover, button:hover {
     opacity: 0.8;
 }
 
+.headerMain {
+    min-height: 120px;
+    background-color: var(--color-white);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-light-pink);
+}
+
+.headerMainWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo {
+    padding-left: 10px;
+}
+
+.headerLogoText {
+    padding: 20px;
+}
+
+.headerLogoLink {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-pink);
+}
+
+.headerSearch {
+    flex: 1 1 38%;
+    text-align: end;
+}
+
+.headerSearchInput {
+    background-color: var(--color-light-pink);
+    border-radius: 40px;
+    outline: none;
+    padding: 5px 10px 5px 35px;
+}
+
+.headerPhone {
+    flex: 1 1 19.8%;
+    margin: 0 3% 0 1%;
+    text-align: end;
+}
+
+.headerPhoneLink {
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.headerCallbackButton {
+    flex: 1 1 18.9%;
+    margin: 0 10px;
+}
+
+.callback  {
+    max-width: 170px;
+    height: 40px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-pink);
+    border-radius: 40px;
+    font-size: 14px;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
 .banner {
     min-height: 604px;
     background: url("./img/banner.jpg") center center / cover no-repeat;
