@@ -372,3 +372,23 @@ a:hover, button:hover {
     fill: var(--color-white);
     fill-opacity: 0.4;
 }
+
+.brands {
+    min-height: 497px;
+    background-color: var(--color-light-pink);
+    padding: 100px 15px 80px;
+}
+
+.brandsWrapper {
+    display: grid;
+    grid-template: 120px 120px 120px / 1fr 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+.brandsBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: 5px;
+}
