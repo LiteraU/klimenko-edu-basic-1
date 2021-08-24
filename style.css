@@ -28,6 +28,21 @@ a:hover, button:hover {
     opacity: 0.8;
 }
 
+a:hover, button:hover {
+    opacity: 0.8;
+}
+
+.title, .subtitle, .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.description {
+    -webkit-line-clamp: 10;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -276,4 +291,84 @@ a:hover, button:hover {
     margin-top: 20px;
     padding: 0 10px;
     cursor: pointer;
+}
+
+.subscription {
+    min-height: 212px;
+    background-color: var(--color-light-pink);
+    padding: 0 15px;
+}
+
+.subscriptionWrapper {
+    display: grid;
+    grid-template: minmax(212px, 110%) / 1fr 1fr;
+    gap: 30px;
+}
+
+.subscriptionBlock {
+    position: relative;
+    background-color: var(--color-pink);
+    padding: 35px 45px 35px 40px;
+}
+
+.subscriptionTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.subscriptionDescription {
+    font-size: 14px;
+    color: var(--color-white);
+    margin-top: 25px;
+    max-width: 231px;
+}
+
+.subscriptionEmail {
+    width: 100%;
+    max-width: 225px;
+    height: 35px;
+    background-color: var(--color-white);
+    border-radius: 30px;
+    margin-top: 25px;
+    color: #C4C4C4;
+    outline: none;
+    padding: 0 25px;
+}
+
+.subscriptionButton {
+    margin-top: 25px;
+}
+
+.buttonInformation {
+    width: 100%;
+    max-width: 170px;
+    min-height: 40px;
+    background-color: var(--color-pink);
+    border: 2px solid var(--color-white);
+    border-radius: 40px;
+    font-size: 14px;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.subscriptionImageDelivery {
+    position: absolute;
+    left: 55%;
+    top: 25%;
+    width: 189px;
+    height: 100px;
+    fill: var(--color-white);
+    fill-opacity: 0.4;
+}
+
+.subscriptionImageEnvelope {
+    position: absolute;
+    left: 65%;
+    top: 25%;
+    width: 140px;
+    height: 108px;
+    fill: var(--color-white);
+    fill-opacity: 0.4;
 }
