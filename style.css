@@ -122,6 +122,35 @@ a:hover, button:hover {
     cursor: pointer;
 }
 
+.headerCategories {
+    min-height: 80px;
+    background-color: var(--color-white);
+}
+
+.headerCategoriesMenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.headerCategoriesItem {
+    padding: 5px 0 5px 40px;
+}
+
+.headerCategoriesItem:first-child {
+    padding-left: 10px;
+}
+
+.headerCategoriesItem:last-child {
+    padding-right: 10px;
+}
+
+.headerCategoriesLink {
+    font-size: 16px;
+    color: var(--color-black);
+}
+
 .banner {
     min-height: 604px;
     background: url("./img/banner.jpg") center center / cover no-repeat;
