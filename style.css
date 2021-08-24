@@ -11,7 +11,8 @@
     --color-pink: #F13C6E;
     --color-black: #000;
     --color-white: #FFF;
-    --COLOR-gray: #828282;
+    --color-gray: #828282;
+    --color-light-black: #333;
 }
 
 ul li {
@@ -22,7 +23,75 @@ a, a:visited, a:hover {
     text-decoration: none;
 }
 
+a:hover, button:hover {
+    opacity: 0.8;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
+}
+
+.offers {
+    min-height: 610px;
+    background-color: var(--color-light-pink);
+    padding: 80px 15px 100px;
+}
+
+.offersTitle {
+    max-width: 60%;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.offersWrapper {
+    display: grid;
+    grid-template: 363px / 255px 255px 255px 255px;
+    gap: 30px;
+    margin-top: 38px;
+}
+
+.offersItem {
+    padding: 25px;
+    text-align: center;
+    background-color: var(--color-white)
+}
+
+.offersImage {
+    min-width: 125px;
+    min-height: 170px;
+}
+
+.offersDescription {
+    font-size: 14px;
+    color: var(--color-light-black);
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.offersPrice {
+    font-size: 21px;
+    color: var(--color-black);
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.offersButtonBuy {
+    width: 100%;
+    max-width: 130px;
+    min-height: 35px;
+    background-color: var(--color-pink);
+    border-radius: 30px;
+    font-size: 14px;
+    color: var(--color-white);
+    margin-top: 20px;
+    padding: 0 10px;
+    cursor: pointer;
 }
