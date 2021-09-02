@@ -11,7 +11,7 @@
     --color-pink: #F13C6E;
     --color-black: #000;
     --color-white: #FFF;
-    --COLOR-gray: #828282;
+    --color-gray: #828282;
 }
 
 ul li {
@@ -22,7 +22,60 @@ a, a:visited, a:hover {
     text-decoration: none;
 }
 
+a:hover, button:hover {
+    opacity: 0.8;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
+}
+
+.banner {
+    min-height: 604px;
+    background: url("./img/banner.jpg") center center / cover no-repeat;
+    padding: 192px 15px;
+    background-color: var(--color-gray);
+}
+
+.title, .subtitle, .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.description {
+    -webkit-line-clamp: 10;
+}
+
+.bannerTitle {
+    max-width: 50%;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.bannerDescription {
+    font-size: 14px;
+    color: var(--color-white);
+    margin-top: 50px;
+    max-width: 45%;
+}
+
+.bannerButton {
+    margin-top: 50px;
+}
+
+.buttonInformation {
+    width: 100%;
+    max-width: 170px;
+    min-height: 40px;
+    background-color: var(--color-pink);
+    border: 2px solid var(--color-white);
+    border-radius: 40px;
+    font-size: 14px;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 0 10px;
 }
