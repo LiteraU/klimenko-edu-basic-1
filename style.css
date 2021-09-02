@@ -12,6 +12,8 @@
     --color-black: #000;
     --color-white: #FFF;
     --color-gray: #828282;
+    --color-light-black: #333;
+    --color-search-icon: #BDBDBD;
 }
 
 ul li {
@@ -29,6 +31,138 @@ a:hover, button:hover {
 .container {
     max-width: 1110px;
     margin: 0 auto;
+}
+
+.headerNavigation {
+    min-height: 50px;
+    background-color: var(--color-light-pink);
+    padding: 16px;
+}
+
+.headerNavigationList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headerNavigationLink {
+    font-size: 14px;
+    color: var(--color-light-black);
+    margin-left: 30px;
+}
+
+.headerNavigationItem:first-child .headerNavigationLink{
+    margin-left: 0;
+}
+
+.headerNavigationLink:hover {
+    opacity: 0.8;
+}
+
+.headerMain {
+    min-height: 120px;
+    background-color: var(--color-white);
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--color-light-pink);
+}
+
+.headerMainWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogoText {
+    margin-left: 10px;
+}
+
+.headerLogoLink {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-pink);
+}
+
+.headerLogoImage {
+    display: block;
+    min-width: 70px;
+    min-height: 70px;
+}
+
+.headerSearch {
+    flex: 1 1 38%;
+    text-align: end;
+    margin-left: 5px;
+}
+
+.searchLink {
+    position: relative;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 1px;
+    left: 7px;
+    width: 20px;
+    height: 20px;
+    fill: var(--color-search-icon);
+}
+
+.headerSearchInput {
+    background-color: var(--color-light-pink);
+    border-radius: 40px;
+    outline: none;
+    padding: 5px 10px 5px 35px;
+}
+
+.headerPhone {
+    flex: 1 1 20%;
+    margin: 0 3% 0 1%;
+    text-align: end;
+}
+
+.headerPhoneLink {
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.headerCallbackButton {
+    flex: 1 1 18%;
+    padding: 0 10px;
+}
+
+.callback  {
+    max-width: 170px;
+    min-height: 40px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-pink);
+    border-radius: 40px;
+    font-size: 14px;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
+.headerCategories {
+    min-height: 80px;
+    background-color: var(--color-white);
+    padding: 30px 15px;
+}
+
+.headerCategoriesMenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headerCategoriesItem {
+    margin-left: 40px;
+}
+
+.headerCategoriesItem:first-child {
+    margin-left: 0;
+}
+
+.headerCategoriesLink {
+    font-size: 16px;
+    color: var(--color-black);
 }
 
 .banner {
