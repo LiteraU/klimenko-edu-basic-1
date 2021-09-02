@@ -43,6 +43,18 @@ a:hover, button:hover {
     -webkit-line-clamp: 10;
 }
 
+.callback  {
+    width: 100%;
+    max-width: 170px;
+    min-height: 40px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-pink);
+    border-radius: 40px;
+    font-size: 14px;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -455,4 +467,138 @@ a:hover, button:hover {
     margin-top: 20px;
     padding: 0 10px;
     cursor: pointer;
+}
+
+.footerCategories {
+    min-height: 373px;
+    background-color: var(--color-white);
+    padding: 60px 15px;
+}
+
+.footerCategoriesWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerCategoriesBlock  {
+    max-width: 100px;
+}
+
+.footerCategoriesTitle {
+    max-width: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-black);
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--color-light-pink);
+}
+
+.footerCategoriesList {
+    margin-top: 30px;
+}
+
+.footerCategoriesLink {
+    font-size: 12px;
+    line-height: 28px;
+    color: var(--COLOR-gray);
+}
+
+.footerMain {
+    min-height: 120px;
+    background-color: var(--color-white);
+    border-top: 1px solid var(--color-light-pink);
+    padding: 37px 15px;
+}
+
+.footerMainWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerMainSocial {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 20%;
+    margin-left: 10px;
+}
+
+.footerMainSocialRound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--color-pink);
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+.footerMainSocialRound:first-child {
+    margin-left: 0;
+}
+
+.footerMainYoutubeImage {
+    width: 23px;
+    height: 16px;
+    fill: var(--color-pink);
+}
+
+.footerMainVkImage {
+    width: 29px;
+    height: 16px;
+    fill: var(--color-pink);
+}
+
+.footerMainFacebookImage {
+    width: 12px;
+    height: 20px;
+    fill: var(--color-pink);
+}
+
+.footerMainInstagramImage {
+    width: 22px;
+    height: 22px;
+    fill: var(--color-pink);
+}
+
+.footerMainAddress {
+    flex-basis: 30%;
+    font-size: 14px;
+    color: var(--color-black);
+    margin-left: 10px;
+}
+
+.footerMainPhone {
+    margin-left: 10px;
+}
+
+.footerMainPhoneLink {
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.footerCopyright {
+    min-height: 64px;
+    background-color: var(--color-light-pink);
+    padding: 25px 15px;
+}
+
+.footerCopyrightWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerCopyrightPrivacyPolicy {
+    margin-left: 20px;
+}
+
+.footerCopyrightRights {
+    flex-basis: 70%;
+}
+
+.footerCopyrightRights, .footerCopyrightPrivacyPolicyLink {
+    font-size: 12px;
+    color: var(--COLOR-gray);
 }
