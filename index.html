@@ -6,221 +6,326 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEAUTY</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header class="header">
+
+<header>
     <nav class="headerNavigation">
         <div class="container">
             <ul class="headerNavigationList">
-                <li class="headerNavigationItem"><a href="#" class="headerNavigationLink">Доставка</a></li>
-                <li class="headerNavigationItem"><a href="#" class="headerNavigationLink">Оплата</a></li>
-                <li class="headerNavigationItem"><a href="#" class="headerNavigationLink">Отзывы</a></li>
-                <li class="headerNavigationItem"><a href="#" class="headerNavigationLink">Вопрос - ответ</a></li>
-                <li class="headerNavigationItem"><a href="#" class="headerNavigationLink">Контакты</a></li>
+                <li class="headerNavigationItem active">
+                    <a class="headerNavigationLink" href="#">Доставка</a>
+                </li>
+                <li class="headerNavigationItem active">
+                    <a class="headerNavigationLink" href="#">Оплата</a>
+                </li>
+                <li class="headerNavigationItem active">
+                    <a class="headerNavigationLink" href="#">Отзывы</a>
+                </li>
+                <li class="headerNavigationItem active">
+                    <a class="headerNavigationLink" href="#">Вопрос - ответ</a>
+                </li>
+                <li class="headerNavigationItem active">
+                    <a class="headerNavigationLink" href="#">Контакты</a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="headerMain">
         <div class="container">
             <div class="headerMainWrapper">
-                <div class="headerLogo"><a href="#" class="headerLogoLink"><img src="./img/logo.svg" alt="logo" class="headerLogoImage"></a></div>
-                <div class="headerLogoText"><a href="#" class="headerLogoLink">BEAUTY</a></div>
+                <a class="headerLogo active" href="#">
+                    <img class="headerLogoImage" src="./img/logo.svg" alt="logo" width="80" height="80">
+                </a>
+                <a class="headerLogoText clip active" href="#">BEAUTY</a>
                 <div class="headerSearch">
-                    <div class="headerForm">
-                        <a href="#" class="searchLink">
-                            <svg class="searchIcon">
-                                <use xlink:href="./img/sprite.svg#search"></use>
-                            </svg>
-                        </a>
-                        <input type="search" class="headerSearchInput">
-                    </div>
+                    <a class="searchLink" href="#">
+                        <svg class="searchIcon" width="20" height="20">
+                            <use xlink:href="./img/sprite.svg#search"></use>
+                        </svg>
+                    </a>
+                    <input class="headerSearchInput" type="search">
                 </div>
-                <div class="headerPhone"><a href="tel:+7812134567" class="headerPhoneLink">8 (812) 13-45-67</a></div>
-                <button class="headerCallbackButton callback">Обратный звонок</button>
+                <a class="headerPhone clip active" href="tel:+7812134567">8 (812) 13-45-67</a>
+                <button class="callback button clip active" type="button">Обратный звонок</button>
             </div>
         </div>
     </div>
     <div class="headerCategories">
         <div class="container">
             <ul class="headerCategoriesMenu">
-                <li class="headerCategoriesItem"><a href="#" class="headerCategoriesLink">Парикмахерская</a></li>
-                <li class="headerCategoriesItem"><a href="#" class="headerCategoriesLink">Барбершоп</a></li>
-                <li class="headerCategoriesItem"><a href="#" class="headerCategoriesLink">Маникюр</a></li>
-                <li class="headerCategoriesItem"><a href="#" class="headerCategoriesLink">Педикюр</a></li>
-                <li class="headerCategoriesItem"><a href="#" class="headerCategoriesLink">Массаж</a></li>
-                <li class="headerCategoriesItem"><a href="#" class="headerCategoriesLink">Мебель</a></li>
+                <li class="headerCategoriesItem active">
+                    <a class="headerCategoriesLink" href="#">Парикмахерская</a>
+                </li>
+                <li class="headerCategoriesItem active">
+                    <a class="headerCategoriesLink" href="#">Барбершоп</a>
+                </li>
+                <li class="headerCategoriesItem active">
+                    <a class="headerCategoriesLink" href="#">Маникюр</a>
+                </li>
+                <li class="headerCategoriesItem active">
+                    <a class="headerCategoriesLink" href="#">Педикюр</a>
+                </li>
+                <li class="headerCategoriesItem active">
+                    <a class="headerCategoriesLink" href="#">Массаж</a>
+                </li>
+                <li class="headerCategoriesItem active">
+                    <a class="headerCategoriesLink" href="#">Мебель</a>
+                </li>
             </ul>
         </div>
     </div>
 </header>
-<main class="main">
+
+<main>
+
     <section class="banner">
         <div class="container">
-            <h1 class="bannerTitle title">Супер кресло</h1>
-            <div class="bannerDescription description">Текст акции всегда отражает суть, а не просто
+            <h1 class="bannerTitle clamp">Супер кресло</h1>
+            <div class="bannerDescription clamp">Текст акции всегда отражает суть, а не просто
                 болтовню, поэтому внимательнее</div>
-            <button class="bannerButton buttonInformation">Подробнее</button>
+            <button class="bannerButton button clip active" type="button">Подробнее</button>
         </div>
     </section>
+
     <section class="offers">
         <div class="container">
-            <h2 class="offersTitle title">Специальные предложения</h2>
+            <h2 class="offersTitle clamp">Специальные предложения</h2>
             <div class="offersWrapper">
                 <div class="offersItem">
-                    <div class="offersImage"><img src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" class="offersImg"></div>
-                    <div class="offersDescription">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
-                    <div class="offersPrice">9 900 &#8381;</div>
-                    <button class="offersButtonBuy">Купить</button>
+                    <img class="offersImage" src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" width="125" height="166">
+                    <div class="offersDescription clamp">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
+                    <div class="offersPrice clamp">9 900 &#8381;</div>
+                    <button class="offersButton button clip active" type="button">Купить</button>
                 </div>
                 <div class="offersItem">
-                    <div class="offersImage"><img src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" class="offersImg"></div>
-                    <div class="offersDescription">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
-                    <div class="offersPrice">9 900 &#8381;</div>
-                    <button class="offersButtonBuy">Купить</button>
+                    <img class="offersImage" src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" width="125" height="166">
+                    <div class="offersDescription clamp">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
+                    <div class="offersPrice clamp">9 900 &#8381;</div>
+                    <button class="offersButton button clip active" type="button">Купить</button>
                 </div>
                 <div class="offersItem">
-                    <div class="offersImage"><img src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" class="offersImg"></div>
-                    <div class="offersDescription">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
-                    <div class="offersPrice">9 900 &#8381;</div>
-                    <button class="offersButtonBuy">Купить</button>
+                    <img class="offersImage" src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" width="125" height="166">
+                    <div class="offersDescription clamp">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
+                    <div class="offersPrice clamp">9 900 &#8381;</div>
+                    <button class="offersButton button clip active" type="button">Купить</button>
                 </div>
                 <div class="offersItem">
-                    <div class="offersImage"><img src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" class="offersImg"></div>
-                    <div class="offersDescription">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
-                    <div class="offersPrice">9 900 &#8381;</div>
-                    <button class="offersButtonBuy">Купить</button>
+                    <img class="offersImage" src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" width="125" height="166">
+                    <div class="offersDescription clamp">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
+                    <div class="offersPrice clamp">9 900 &#8381;</div>
+                    <button class="offersButton button clip active" type="button">Купить</button>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="subscription">
         <div class="container">
             <div class="subscriptionWrapper">
                 <div class="subscriptionBlock">
                     <div class="subscriptionInformation">
-                        <div class="subscriptionTitle title">Получайте бонусы и подарки</div>
-                        <div class="subscriptionDescription description">Каждый месяц разыгрываем 10 000 рублей для наших клиентов</div>
-                        <input type="email" class="subscriptionEmail" placeholder="Введите e-mail">
+                        <h2 class="subscriptionTitle clamp">Получайте бонусы и подарки</h2>
+                        <div class="subscriptionDescription clamp">Каждый месяц разыгрываем 10 000 рублей для наших клиентов</div>
+                        <input class="subscriptionEmail" type="email" placeholder="Введите e-mail">
                     </div>
-                    <svg class="subscriptionImageEnvelope">
+                    <svg class="subscriptionImageEnvelope" width="140" height="108">
                         <use xlink:href="./img/sprite.svg#envelope"></use>
                     </svg>
                 </div>
                 <div class="subscriptionBlock">
                     <div class="subscriptionInformation">
-                        <div class="subscriptionTitle title">Заходите к нам</div>
-                        <div class="subscriptionDescription description">Более 300 магазинов
+                        <h2 class="subscriptionTitle clamp">Заходите к нам</h2>
+                        <div class="subscriptionDescription clamp">Более 300 магазинов
                             по всей России</div>
-                        <button class="subscriptionButton buttonInformation">Карта магазинов</button>
+                        <button class="subscriptionButton button clip active" type="button">Карта магазинов</button>
                     </div>
-                    <svg class="subscriptionImageDelivery">
+                    <svg class="subscriptionImageDelivery" width="189" height="100">
                         <use xlink:href="./img/sprite.svg#delivery"></use>
                     </svg>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="brands">
         <div class="container">
             <div class="brandsWrapper">
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
-                <div class="brandsBlock"><a href="#" class="brandsLink"><img src="./img/brand.png" alt="brand" class="brandsImage"></a></div>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
+                <a href="#" class="brandsBlock active">
+                    <img class="brandsImage" src="./img/brand.png" alt="brand" width="149" height="49">
+                </a>
             </div>
         </div>
     </section>
+
     <section class="offers">
         <div class="container">
-            <h2 class="offersTitle title">Специальные предложения</h2>
+            <h2 class="offersTitle clamp">Вы недавно смотрели</h2>
             <div class="offersWrapper">
                 <div class="offersItem">
-                    <div class="offersImage"><img src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" class="offersImg"></div>
-                    <div class="offersDescription">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
-                    <div class="offersPrice">9 900 &#8381;</div>
-                    <button class="offersButtonBuy">Купить</button>
+                    <img class="offersImage" src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" width="125" height="166">
+                    <div class="offersDescription clamp">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
+                    <div class="offersPrice clamp">9 900 &#8381;</div>
+                    <button class="offersButton button clip active" type="button">Купить</button>
                 </div>
                 <div class="offersItem">
-                    <div class="offersImage"><img src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" class="offersImg"></div>
-                    <div class="offersDescription">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
-                    <div class="offersPrice">9 900 &#8381;</div>
-                    <button class="offersButtonBuy">Купить</button>
+                    <img class="offersImage" src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" width="125" height="166">
+                    <div class="offersDescription clamp">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
+                    <div class="offersPrice clamp">9 900 &#8381;</div>
+                    <button class="offersButton button clip active" type="button">Купить</button>
                 </div>
                 <div class="offersItem">
-                    <div class="offersImage"><img src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" class="offersImg"></div>
-                    <div class="offersDescription">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
-                    <div class="offersPrice">9 900 &#8381;</div>
-                    <button class="offersButtonBuy">Купить</button>
+                    <img class="offersImage" src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" width="125" height="166">
+                    <div class="offersDescription clamp">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
+                    <div class="offersPrice clamp">9 900 &#8381;</div>
+                    <button class="offersButton button clip active" type="button">Купить</button>
                 </div>
                 <div class="offersItem">
-                    <div class="offersImage"><img src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" class="offersImg"></div>
-                    <div class="offersDescription">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
-                    <div class="offersPrice">9 900 &#8381;</div>
-                    <button class="offersButtonBuy">Купить</button>
+                    <img class="offersImage" src="./img/armchair.png" alt="Парикмахерское кресло «Норм» гидравлическое" width="125" height="166">
+                    <div class="offersDescription clamp">Парикмахерское кресло &laquo;Норм&raquo; гидравлическое</div>
+                    <div class="offersPrice clamp">9 900 &#8381;</div>
+                    <button class="offersButton button clip active" type="button">Купить</button>
                 </div>
             </div>
         </div>
     </section>
+
 </main>
+
 <footer class="footer">
     <div class="footerCategories">
         <div class="container">
             <div class="footerCategoriesWrapper">
                 <div class="footerCategoriesBlock">
-                    <div class="footerCategoriesTitle title">Популярные категории</div>
+                    <div class="footerCategoriesTitle clamp">Популярные категории</div>
                     <ul class="footerCategoriesList">
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Насадки</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Инструменты</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Гель-лаки</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Дизайн</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Наращивание</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Оборудование</a></li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Насадки</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Инструменты</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Гель-лаки</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Дизайн</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Наращивание</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Оборудование</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footerCategoriesBlock">
-                    <div class="footerCategoriesTitle title">Популярные категории</div>
+                    <div class="footerCategoriesTitle clamp">Популярные категории</div>
                     <ul class="footerCategoriesList">
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Насадки</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Инструменты</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Гель-лаки</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Дизайн</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Наращивание</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Оборудование</a></li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Насадки</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Инструменты</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Гель-лаки</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Дизайн</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Наращивание</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Оборудование</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footerCategoriesBlock">
-                    <div class="footerCategoriesTitle title">Популярные категории</div>
+                    <div class="footerCategoriesTitle clamp">Популярные категории</div>
                     <ul class="footerCategoriesList">
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Насадки</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Инструменты</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Гель-лаки</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Дизайн</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Наращивание</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Оборудование</a></li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Насадки</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Инструменты</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Гель-лаки</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Дизайн</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Наращивание</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Оборудование</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footerCategoriesBlock">
-                    <div class="footerCategoriesTitle title">Популярные категории</div>
+                    <div class="footerCategoriesTitle clamp">Популярные категории</div>
                     <ul class="footerCategoriesList">
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Насадки</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Инструменты</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Гель-лаки</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Дизайн</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Наращивание</a></li>
-                        <li class="footerCategoriesItem subtitle"><a href="#" class="footerCategoriesLink">Оборудование</a></li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Насадки</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Инструменты</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Гель-лаки</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Дизайн</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Наращивание</a>
+                        </li>
+                        <li class="footerCategoriesItem">
+                            <a class="footerCategoriesLink clamp active" href="#">Оборудование</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -229,51 +334,52 @@
     <div class="footerMain">
         <div class="container">
             <div class="footerMainWrapper">
-                <div class="footerMainSocial">
-                    <a href="https://www.youtube.com/" target="_blank" class="footerMainYoutube">
-                        <div class="footerMainSocialRound">
-                            <svg class="footerMainYoutubeImage">
+                <div class="footerSocial">
+                    <a class="socialBlock active" href="https://www.youtube.com/" target="_blank">
+                        <div class="socialRound">
+                            <svg width="24" height="16" role="img" aria-label="Youtube">
                                 <use xlink:href="./img/sprite.svg#youtube"></use>
                             </svg>
                         </div>
                     </a>
-                    <a href="https://vk.com/" target="_blank" class="footerMainVk">
-                        <div class="footerMainSocialRound">
-                            <svg class="footerMainVkImage">
+                    <a class="socialBlock active" href="https://vk.com/" target="_blank">
+                        <div class="socialRound">
+                            <svg width="29" height="16">
                                 <use xlink:href="./img/sprite.svg#vk"></use>
                             </svg>
                         </div>
                     </a>
-                    <a href="https://www.facebook.com/" target="_blank" class="footerMainFacebook">
-                        <div class="footerMainSocialRound">
-                            <svg class="footerMainFacebookImage">
+                    <a class="socialBlock active" href="https://www.facebook.com/" target="_blank">
+                        <div class="socialRound">
+                            <svg width="12" height="20">
                                 <use xlink:href="./img/sprite.svg#facebook"></use>
                             </svg>
                         </div>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footerMainInstagram">
-                        <div class="footerMainSocialRound">
-                            <svg class="footerMainInstagramImage">
+                    <a class="socialBlock active" href="https://www.instagram.com/" target="_blank">
+                        <div class="socialRound">
+                            <svg width="22" height="22">
                                 <use xlink:href="./img/sprite.svg#instagram"></use>
                             </svg>
                         </div>
                     </a>
                 </div>
-                <div class="footerMainAddress">198555, Невский пр. 140, офис 140</div>
-                <div class="footerMainPhone"><a href="tel:+78121234567" class="footerMainPhoneLink">8 (812) 123-45-67</a></div>
-                <button class="footerMainCallback callback">Обратный звонок</button>
+                <div class="footerMainAddress clamp">198555, Невский пр. 140, офис 140</div>
+                <a class="footerMainPhone clip active" href="tel:+78121234567">8 (812) 123-45-67</a>
+                <button class="callback button clip active" type="button">Обратный звонок</button>
             </div>
         </div>
     </div>
     <div class="footerCopyright">
         <div class="container">
             <div class="footerCopyrightWrapper">
-                <div class="footerCopyrightRights">Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты</div>
-                <div class="footerCopyrightPrivacyPolicy"><a href="#" class="footerCopyrightPrivacyPolicyLink">Политика конфиденциальности</a></div>
+                <div class="footerCopyrightRights clamp">Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты</div>
+                <a href="#" class="footerCopyrightPrivacy clamp">Политика конфиденциальности</a>
             </div>
         </div>
     </div>
 </footer>
+
 </body>
 
 </html>
